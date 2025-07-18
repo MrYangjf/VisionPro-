@@ -1,0 +1,761 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="toolStripButton_SaveToLocal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 34</value>
+  </data>
+  <data name="toolStripButton_SaveToLocal.Text" xml:space="preserve">
+    <value>Save To Local</value>
+  </data>
+  <data name="toolStripButton_ApplyToSystem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>250, 34</value>
+  </data>
+  <data name="toolStripButton_ApplyToSystem.Text" xml:space="preserve">
+    <value>Change Current Value</value>
+  </data>
+  <data name="toolStripButton_ReadCurrent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>225, 34</value>
+  </data>
+  <data name="toolStripButton_ReadCurrent.Text" xml:space="preserve">
+    <value>Read Current Value</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 14</value>
+  </data>
+  <data name="label.Text" xml:space="preserve">
+    <value>Image Store Path：</value>
+  </data>
+  <data name="VariableShow_OKImageStorePath.Location" type="System.Drawing.Point, System.Drawing">
+    <value>141, 62</value>
+  </data>
+  <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 14</value>
+  </data>
+  <data name="label18.Text" xml:space="preserve">
+    <value>Image Store Days：</value>
+  </data>
+  <data name="VariableShow_SystemRowCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>784, 20</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Time out:</value>
+  </data>
+  <data name="VariableShow_SystemColCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>548, 20</value>
+  </data>
+  <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>654, 23</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 14</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>CameraPanel Rows:</value>
+  </data>
+  <data name="VariableShow_SystemCamCount.Location" type="System.Drawing.Point, System.Drawing">
+    <value>298, 20</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 14</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Camera Count:</value>
+  </data>
+  <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>404, 23</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 14</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>CameraPanel Colums:</value>
+  </data>
+  <data name="groupBox1.Text" xml:space="preserve">
+    <value>System Variable</value>
+  </data>
+  <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="groupBox3.Text" xml:space="preserve">
+    <value>Product Label Variable Settings</value>
+  </data>
+  <data name="tabPage_Param1.Text" xml:space="preserve">
+    <value>Parametres Page 1</value>
+  </data>
+  <data name="label44.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label45.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label46.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label47.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_2_DefectModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_2_DefectModule.Text" xml:space="preserve">
+    <value>Print Decfect Inspect</value>
+  </data>
+  <data name="groupBox13.Text" xml:space="preserve">
+    <value>Decfect Module</value>
+  </data>
+  <data name="btn_2_ImageDateModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_2_ImageDateModule.Text" xml:space="preserve">
+    <value>Image Source Settings</value>
+  </data>
+  <data name="groupBox_top.Text" xml:space="preserve">
+    <value>Top Face Test</value>
+  </data>
+  <data name="groupBox14.Text" xml:space="preserve">
+    <value>Test Flow 2</value>
+  </data>
+  <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_DefectModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_DefectModule.Text" xml:space="preserve">
+    <value>Print Decfect Inspect</value>
+  </data>
+  <data name="groupBox6.Text" xml:space="preserve">
+    <value>Decfect Module</value>
+  </data>
+  <data name="btn_1_VolumeOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_VolumeOCRModule.Text" xml:space="preserve">
+    <value>Volume OCR</value>
+  </data>
+  <data name="btn_1_SNOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_SNOCRModule.Text" xml:space="preserve">
+    <value>SN OCR</value>
+  </data>
+  <data name="btn_1_Code3OCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_Code3OCRModule.Text" xml:space="preserve">
+    <value>Code3 OCR</value>
+  </data>
+  <data name="btn_1_IMEI1OCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_IMEI1OCRModule.Text" xml:space="preserve">
+    <value>IMEI1 OCR</value>
+  </data>
+  <data name="btn_1_IMEI2OCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_IMEI2OCRModule.Text" xml:space="preserve">
+    <value>IMEI2 OCR</value>
+  </data>
+  <data name="btn_1_ImageDateModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_ImageDateModule.Text" xml:space="preserve">
+    <value>Image Source Settings</value>
+  </data>
+  <data name="btn_1_ModelOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_ModelOCRModule.Text" xml:space="preserve">
+    <value>Model  OCR </value>
+  </data>
+  <data name="btn_1_CheckerOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_CheckerOCRModule.Text" xml:space="preserve">
+    <value>Checker OCR</value>
+  </data>
+  <data name="btn_1_ColorOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_ColorOCRModule.Text" xml:space="preserve">
+    <value>Color OCR</value>
+  </data>
+  <data name="btn_1_DateOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_DateOCRModule.Text" xml:space="preserve">
+    <value>Date OCR</value>
+  </data>
+  <data name="btn_1_MatchModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_MatchModule.Text" xml:space="preserve">
+    <value>Aligment Match Setting</value>
+  </data>
+  <data name="btn_1_WKGOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_WKGOCRModule.Text" xml:space="preserve">
+    <value>SAR OCR</value>
+  </data>
+  <data name="btn_1_AuthOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_AuthOCRModule.Text" xml:space="preserve">
+    <value>Auth OCR</value>
+  </data>
+  <data name="btn_1_2DCodeModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_2DCodeModule.Text" xml:space="preserve">
+    <value>2D Code</value>
+  </data>
+  <data name="btn_1_Code3Module.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_Code3Module.Text" xml:space="preserve">
+    <value>Code3 Code</value>
+  </data>
+  <data name="btn_1_IMEI1CodeModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_IMEI1CodeModule.Text" xml:space="preserve">
+    <value>IMEI1 Code</value>
+  </data>
+  <data name="btn_1_IMEI2CodeModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_1_IMEI2CodeModule.Text" xml:space="preserve">
+    <value>IMEI2 Code</value>
+  </data>
+  <data name="groupBox_bottom.Text" xml:space="preserve">
+    <value>Bottom Face Test</value>
+  </data>
+  <data name="groupBox7.Text" xml:space="preserve">
+    <value>Test Flow 1</value>
+  </data>
+  <data name="label40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label41.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label42.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label43.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_DefectModule4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_DefectModule4.Text" xml:space="preserve">
+    <value>Print Decfect Inspect</value>
+  </data>
+  <data name="groupBox12.Text" xml:space="preserve">
+    <value>Decfect Module</value>
+  </data>
+  <data name="groupBox_side5.Text" xml:space="preserve">
+    <value>Side 4</value>
+  </data>
+  <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_DefectModule3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_DefectModule3.Text" xml:space="preserve">
+    <value>Print Decfect Inspect</value>
+  </data>
+  <data name="groupBox11.Text" xml:space="preserve">
+    <value>Decfect Module</value>
+  </data>
+  <data name="groupBox_side4.Text" xml:space="preserve">
+    <value>Side 3</value>
+  </data>
+  <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_DefectModule2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_DefectModule2.Text" xml:space="preserve">
+    <value>Print Decfect Inspect</value>
+  </data>
+  <data name="groupBox10.Text" xml:space="preserve">
+    <value>Decfect Module</value>
+  </data>
+  <data name="groupBox_side3.Text" xml:space="preserve">
+    <value>Side 2</value>
+  </data>
+  <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_DefectModule1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_DefectModule1.Text" xml:space="preserve">
+    <value>Print Decfect Inspect</value>
+  </data>
+  <data name="groupBox9.Text" xml:space="preserve">
+    <value>Decfect Module</value>
+  </data>
+  <data name="groupBox_side2.Text" xml:space="preserve">
+    <value>Side 1</value>
+  </data>
+  <data name="btn_3_IMEI1CodeModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_IMEI1CodeModule.Text" xml:space="preserve">
+    <value>IMEI1 Code</value>
+  </data>
+  <data name="btn_3_IMEI2CodeModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_IMEI2CodeModule.Text" xml:space="preserve">
+    <value>IMEI2 Code</value>
+  </data>
+  <data name="btn_3_IMEI2OCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_IMEI2OCRModule.Text" xml:space="preserve">
+    <value>IMEI2 OCR</value>
+  </data>
+  <data name="btn_3_IMEI1OCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_IMEI1OCRModule.Text" xml:space="preserve">
+    <value>IMEI1 OCR</value>
+  </data>
+  <data name="btn_3_VolumeOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_VolumeOCRModule.Text" xml:space="preserve">
+    <value>Volume OCR</value>
+  </data>
+  <data name="btn_3_SNOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_SNOCRModule.Text" xml:space="preserve">
+    <value>SN OCR</value>
+  </data>
+  <data name="btn_3_ModelOCRModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_ModelOCRModule.Text" xml:space="preserve">
+    <value>Model OCR</value>
+  </data>
+  <data name="btn_3_ImageDateModule.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_3_ImageDateModule.Text" xml:space="preserve">
+    <value>Image Source Settings</value>
+  </data>
+  <data name="groupBox_side1.Text" xml:space="preserve">
+    <value>Side General Setting</value>
+  </data>
+  <data name="groupBox8.Text" xml:space="preserve">
+    <value>Test Flow 3</value>
+  </data>
+  <data name="tabPage_Param3.Text" xml:space="preserve">
+    <value>Parametres Page 2</value>
+  </data>
+  <data name="checkBox_EnableSpinnakerCamera.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="checkBox_EnableSpinnakerCamera.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 18</value>
+  </data>
+  <data name="checkBox_EnableSpinnakerCamera.Text" xml:space="preserve">
+    <value>Enable Spinnaker Camera</value>
+  </data>
+  <data name="label21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 14</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Camera 2 SN :</value>
+  </data>
+  <data name="label48.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 14</value>
+  </data>
+  <data name="label48.Text" xml:space="preserve">
+    <value>Camera 1 SN :</value>
+  </data>
+  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 14</value>
+  </data>
+  <data name="label22.Text" xml:space="preserve">
+    <value>Camera 3 SN :</value>
+  </data>
+  <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 14</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Cam2 Exposure Time:</value>
+  </data>
+  <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label24.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 14</value>
+  </data>
+  <data name="label24.Text" xml:space="preserve">
+    <value>Cam3 Exposure Time:</value>
+  </data>
+  <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>140, 14</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Cam1 Exposure Time:</value>
+  </data>
+  <data name="btn_Cam1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Cam1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 30</value>
+  </data>
+  <data name="btn_Cam1.Text" xml:space="preserve">
+    <value>Cam1 Module</value>
+  </data>
+  <data name="btn_Cam2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Cam2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>163, 164</value>
+  </data>
+  <data name="btn_Cam2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 30</value>
+  </data>
+  <data name="btn_Cam2.Text" xml:space="preserve">
+    <value>Cam 2 Module </value>
+  </data>
+  <data name="btn_Cam3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_Cam3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>313, 164</value>
+  </data>
+  <data name="btn_Cam3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 30</value>
+  </data>
+  <data name="btn_Cam3.Text" xml:space="preserve">
+    <value>Cam 3 Module </value>
+  </data>
+  <data name="groupBox5.Text" xml:space="preserve">
+    <value>Camera Module Setting</value>
+  </data>
+  <data name="btn_SaveSolAs.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_SaveSolAs.Text" xml:space="preserve">
+    <value>Save As</value>
+  </data>
+  <data name="btn_SaveSol.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_SaveSol.Text" xml:space="preserve">
+    <value>Save Solution</value>
+  </data>
+  <data name="btn_OpenVMsys.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btn_OpenVMsys.Text" xml:space="preserve">
+    <value>Open VM UI</value>
+  </data>
+  <data name="button_ChangeSolName.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_ChangeSolName.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 30</value>
+  </data>
+  <data name="button_ChangeSolName.Text" xml:space="preserve">
+    <value>Make Sure</value>
+  </data>
+  <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 14</value>
+  </data>
+  <data name="label14.Text" xml:space="preserve">
+    <value>Change To:</value>
+  </data>
+  <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 14</value>
+  </data>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Solution Name:</value>
+  </data>
+  <data name="button_ChangeVMexePath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 14</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Solution Path:</value>
+  </data>
+  <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 14</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>VisionMaster Path:</value>
+  </data>
+  <data name="groupBox2.Text" xml:space="preserve">
+    <value>Vision Solution &amp; UI</value>
+  </data>
+  <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>91, 14</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Process ID：</value>
+  </data>
+  <data name="comboBox_ProcessList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 27</value>
+  </data>
+  <data name="button_ShowModuleUI.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="button_ShowModuleUI.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 27</value>
+  </data>
+  <data name="button_ShowModuleUI.Text" xml:space="preserve">
+    <value>Show Module </value>
+  </data>
+  <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 14</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Module ID：</value>
+  </data>
+  <data name="comboBox_ModuleList.Location" type="System.Drawing.Point, System.Drawing">
+    <value>99, 70</value>
+  </data>
+  <data name="groupBox4.Text" xml:space="preserve">
+    <value>Global Flow Module</value>
+  </data>
+  <data name="tabPage_Param2.Text" xml:space="preserve">
+    <value>Parametres Page 3</value>
+  </data>
+</root>

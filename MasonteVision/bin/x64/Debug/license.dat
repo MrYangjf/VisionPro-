@@ -1,0 +1,8 @@
+##################################################################################
+# Huawei Technologies Co., Ltd.  (Id: CM:3-5665577)                              #
+# HALCON 18.11 Steady RTL (Bundle)                                               #
+##################################################################################
+LICENSE MVTec_HALCON 18.11 MODULES=fc123bdom ID=CM:3-5665577 SESSIONS=1 \
+        SIGNATURE="B4B5 8816 EDA6 F6FD 8029 09C9 C4F6 5394 6109 9E7A 768E \
+        C53D 56F4 1B18 8104 2D7F D0F8 B201 2EEB 8B14 81CD 3411 811C 9414 8F72 \
+        8011 2A8E 9921 FECA 5B7D A7F2 9B0C"

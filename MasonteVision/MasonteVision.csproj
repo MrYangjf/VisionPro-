@@ -1,0 +1,567 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F25B67BC-F8B7-457F-949C-7E454B12330A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MasonteVision</RootNamespace>
+    <AssemblyName>MasonteVision</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+    <DocumentationFile>
+    </DocumentationFile>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cognex.VisionPro, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Blob, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.Blob.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Blob.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.Blob.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.CalibFix, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.CalibFix.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.CalibFix.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64" />
+    <Reference Include="Cognex.VisionPro.CalibFixPlus, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505" />
+    <Reference Include="Cognex.VisionPro.Caliper, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.Caliper.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Caliper.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.Caliper.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Comm, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.Comm.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Core, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.CorePlus, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.CorePlus.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.Display.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.Display.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.ImageFile, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.ImageFile.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.ImageFile.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.ImageFile.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.ImageProcessing, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.ImageProcessing.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.LineMax, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.LineMax.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.LineMax.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.LineMax.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.LinescanDistortionCorrection, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.LinescanDistortionCorrection.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.LinescanDistortionCorrection.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.LinescanDistortionCorrection.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.PMAlign.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.PMAlign.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.ToolGroup, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.ToolGroup.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro.ToolGroup.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro.ToolGroup.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro3D, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro3D.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro3D.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro3D.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro3D.Core, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro3D.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro3D.Display.Controls, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro3D.Display.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Cognex.VisionPro3D.Graphic, Version=71.2.0.0, Culture=neutral, PublicKeyToken=ef0f902af9dee505, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Cognex\VisionPro\ReferencedAssemblies\Cognex.VisionPro3D.Graphic.dll</HintPath>
+    </Reference>
+    <Reference Include="Convert2CogImage16Range, Version=1.6.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Convert2CogImage16Range dll代码\bin\Debug\Convert2CogImage16Range.dll</HintPath>
+    </Reference>
+    <Reference Include="CppCodeProvider, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Interop.ADOX, Version=2.8.0.0, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\MasonteDataProcess\bin\x64\Debug\Interop.ADOX.dll</HintPath>
+    </Reference>
+    <Reference Include="MasonteCommInterface">
+      <HintPath>..\..\MasonteCommInterface\bin\x64\Debug\MasonteCommInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="MasonteDataProcess">
+      <HintPath>..\..\MasonteDataProcess\bin\x64\Debug\MasonteDataProcess.dll</HintPath>
+    </Reference>
+    <Reference Include="MvCameraControl.Net">
+      <HintPath>C:\Program Files (x86)\MVS\Development\DotNet\win64\MvCameraControl.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HonorMachineTest\HonorMachineOutput\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SRAPI_CSharp-x64, Version=5.4.0.74, Culture=neutral, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\SmartRay\SmartRay DevKit\SR_API\Win_x64_MSVC_19\bin\SRAPI_CSharp-x64.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="3DVision\AllVisionTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3DVision\AllVisionTool.designer.cs">
+      <DependentUpon>AllVisionTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3DVision\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3DVision\Form1.designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3DVision\GenericToolEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="3DVision\GenericToolEditor.designer.cs">
+      <DependentUpon>GenericToolEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="3DVision\VPXparameter.cs" />
+    <Compile Include="CSTLight.cs" />
+    <Compile Include="HalconCameraConn.cs" />
+    <Compile Include="LightSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LightSet.designer.cs">
+      <DependentUpon>LightSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MessageBoxEX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MessageBoxEX.Designer.cs">
+      <DependentUpon>MessageBoxEX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MV_Form_Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MV_Form_Loading.Designer.cs">
+      <DependentUpon>MV_Form_Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MV_Form_Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MV_Form_Login.Designer.cs">
+      <DependentUpon>MV_Form_Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MV_Global_Variable.cs" />
+    <Compile Include="MV_SubThread_Flow.cs" />
+    <Compile Include="MV_UC_DataTable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MV_UC_DataTable.Designer.cs">
+      <DependentUpon>MV_UC_DataTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MV_Form_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MV_Form_Main.Designer.cs">
+      <DependentUpon>MV_Form_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MV_UC_Ethernet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MV_UC_Ethernet.Designer.cs">
+      <DependentUpon>MV_UC_Ethernet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MV_UC_LOGList.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MV_UC_LOGList.Designer.cs">
+      <DependentUpon>MV_UC_LOGList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MV_UC_ParametersSetting.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MV_UC_ParametersSetting.designer.cs">
+      <DependentUpon>MV_UC_ParametersSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="3DVision\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="3DVision\GenericToolEditor.resx">
+      <DependentUpon>GenericToolEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LightSet.resx">
+      <DependentUpon>LightSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxEX.en-US.resx">
+      <DependentUpon>MessageBoxEX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MessageBoxEX.resx">
+      <DependentUpon>MessageBoxEX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_Form_Loading.resx">
+      <DependentUpon>MV_Form_Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_Form_Login.en-US.resx">
+      <DependentUpon>MV_Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_Form_Login.resx">
+      <DependentUpon>MV_Form_Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_Form_Main.en-US.resx">
+      <DependentUpon>MV_Form_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_Form_Main.resx">
+      <DependentUpon>MV_Form_Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_UC_DataTable.en-US.resx">
+      <DependentUpon>MV_UC_DataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_UC_DataTable.resx">
+      <DependentUpon>MV_UC_DataTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_UC_Ethernet.resx">
+      <DependentUpon>MV_UC_Ethernet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_UC_LOGList.en-US.resx">
+      <DependentUpon>MV_UC_LOGList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_UC_LOGList.resx">
+      <DependentUpon>MV_UC_LOGList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_UC_ParametersSetting.en-US.resx">
+      <DependentUpon>MV_UC_ParametersSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MV_UC_ParametersSetting.resx">
+      <DependentUpon>MV_UC_ParametersSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\1190801.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\帮助.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\保存.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\查询.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\撤销.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\串口图标3d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\导出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\登出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\登录.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\发送.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\管理.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\记录.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\加载.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\交换机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\解锁.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\禁止.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\警告.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\明信LOGO_2020.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\启动.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\取消.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\确认.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\日历.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\删除.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\设备参数配置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\设置参数.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\摄像头.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\手机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\数据库.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\数据统计.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\数据显示.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\刷新.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\通讯.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\通讯故障.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\退出.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\退出2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\网口图标3d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\网络.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\网络接口.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\文件夹.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\系统配置.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\下载.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\相机.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\选择.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\应用.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\用户.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\用户增加.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\暂停.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\主界面.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\主页.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\注销.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\注意.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\最小化.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\回收.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ICON\png图标\明信logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxCognexDisplay">
+      <Guid>{0ACBBD11-6E21-11D4-9751-0060089571FC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="CognexCore">
+      <Guid>{3F1A6C21-79A0-11D2-AD15-006097FE57F1}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="CognexDisplay">
+      <Guid>{0ACBBD11-6E21-11D4-9751-0060089571FC}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
